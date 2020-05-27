@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Flag
+comment0.text=\r\n\r\n\ Draw\ National\ Flags\r\n\r\n@author\ Scott\ Hansford\r\n@version\ PA2\:\ Flags\r\n@version\ Standard\r\n
+comment1.params=
+comment1.target=void\ drawNigerFlag()
+comment1.text=\r\n\ This\ method\ will\ draw\ the\ Niger\ flag\r\n\ \r\n\ Calculations\:\ \r\n\ \ \ \ fly\:hoist\:\ 7\:6\ \:\ 308\:\ 264\r\n\ \ \ \ orange\ color\ -\ red\:255,\ green\:127,\ blue\:0\r\n\ \ \ \ green\ color\ -\ red\:0,\ green\:204,\ blue\:0\r\n\ \ \ \ actual\ dimensions\ adjusted\ by\ one\ pixel\r\n\ \ \ \ overall\ flag\:\r\n\ \ \ \ \ \ \ dimension\:\ 308\ x\ 264\r\n\ \ \ \ \ \ \ location\:\ (10,10)\r\n\ \ \ \ \ \ \ Horizontal\ rectangles\:\r\n\ \ \ \ \ \ \ \ \ \ dimension\:\ 308\ x\ 89\r\n\ \ \ \ \ \ \ \ \ \ locations\:\ (0,0),(0,88),(0,175)\r\n\ \ \ \ \ \ \ \ \ \ height/3\ \:\ 264/3\ \=\ 88\ +\ 1\ for\ border\ overlap\ \=\ 89\r\n\ \ \ \ \ \ \ Circle\:\r\n\ \ \ \ \ \ \ \ \ \ dimension\:\ \ 75%\ of\ horizontal\ rectangle\:\ 88\ *\ .75\ \=\ 66\ \r\n\ \ \ \ \ \ \ Circle\ horizontal\ placement\:\ midRect\ width\ /\ 2\ -\ circle\ diamter\ /\ 2\ \:\ 308/2\ \=\ 154\ -\ 33\ \=\ 121\ \ \r\n\ \ \ \ \ \ \ Circle\ vertical\ placement\:\ midRect\ height\ /2\ -\ circle\ diameter\ /2\ \:\ 88\ /\ 2\ \=\ 44\ -\ 33\ \=\ 21\r\n\ \r\n
+comment2.params=
+comment2.target=void\ drawSwedenFlag()
+comment2.text=\r\n\ This\ method\ will\ draw\ the\ Sweden\ flag\r\n\ \r\n\ Calculations\:\r\n\ \ \ \ fly\:\ blue\:yellow\:blue\ vertically\ \:\ 5\:2\:9\ \:\ 260/5\ \=\ 52,\ 260/2\ \=\ 130,\ 416*9/16\ \=\ 234\r\n\ \ \ \ hoist\:\ blue\:yellow\:blue\ horizontally\ \:\ 4\:2\:4\ \:\ 416/4\ \=\ 104,\ 260/5\ \=\ 52\ \ \r\n\r\n\ \ \ \ Rectangle\ calculations\ adjust\ to\ account\ for\ \r\n\ \ \ \ \r\n\ \ \ \ overall\ flag\:\r\n\ \ \ \ \ \ \ dimension\:\ 416\ x\ 260\r\n\ \ \ \ \ \ \ location\:\ (20,20)\r\n\r\n\ \ \ \ horizontal\ rectangle\:\r\n\ \ \ \ \ \ \ dimension\:\ 416\ x\ 52\r\n\ \ \ \ \ \ \ location\:\ (0,110)\r\n\r\n\ \ \ \ vertical\ rectangle\:\r\n\ \ \ \ \ \ \ dimension\:\ 52\ x\ 260\r\n\ \ \ \ \ \ \ location\:\ (140,0)\r\n
+comment3.params=
+comment3.target=void\ drawNorwayFlag()
+comment3.text=\r\n\ This\ method\ will\ draw\ the\ flag\ of\ Norway\r\n\ \r\n\ Calculations\:\r\n\r\n\ \ Overall\ flag\:\r\n\ \ \ \ \ dimensions\:\ 22\:16\ \:\ 352\ wide(fly)\ x\ 256\ high(hoist)\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ vertical\ ratio\:\ red\:white\:blue\:white\:red\ \ \:\ 6\:1\:2\:1\:6\ \:\ 352-256\ \=\ 96,\ 16,\ 16\ *\ 2\ \=\ 32,\ 16\r\n\ \ \ \ \ horizontal\ ratio\:\ red\:white\:blue\:white\:red\ \ \:\ 6\:1\:2\:1\:12\r\n\ \ \ \ \ vertical\ position\:\ 96\ +\ 16\ \=\ 112\r\n\ \ \ \ \ vertical\ width\ \=\ 96\ -\ 16\ \=\ 80\r\n\ \ Red\ rectangle\ dimensions\:\r\n\ \ \ \ \ dimensions\:\ 96\ x\ 96,\ 192\ x\ 96\r\n\ \ \ \ \ location\:\ (0,0),(0,160),(160,0),(160,160);\r\n\ \ White\ rectangle\ dimensions\:\r\n\ \ \ \ \ dimensions\:\ 112\ x\ 112,\ 208\ x\ 112\r\n\ \ \ \ \ location\:\ (0,0),\ (0,144),(144,0),(144,144);\r\n
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment4.text=\r\n\ This\ method\ will\ draw\ flags\ of\ Nigeria,\ Sweden,\ and\ Norway\r\n\ @params\ args\ Unused.\r\n
+numComments=5
