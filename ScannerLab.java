@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ScannerLab {
     
     private java.util.Scanner scan;
@@ -20,14 +22,16 @@ public class ScannerLab {
         String line = "";
         // loop through the array and concatenate the values
         // put a space between the words
-        System.out.println("The words you entered are: " + line);
+        System.out.print("The words you entered are: " + line);
         
-        
-        for(String yourWord : fiveValues)
+        System.out.print(fiveValues[0]);
+        for(int i = 1; i < fiveValues.length; i++)
         {
-         System.out.print(yourWord + ", ");
+         System.out.print(", " + fiveValues[i]);
         }
+        System.out.print(".");
         System.out.println();
+        
     }
     
     public void echoIntsAndTotal() {
@@ -40,14 +44,12 @@ public class ScannerLab {
             // prompt for the value
             System.out.print("Enter integer value " + i + ": ");
             // get the input value
-            
             if(scan.hasNextInt())
             {  
                inputValue = scan.nextInt();
                System.out.println("You entered " + inputValue);
                // store the input value into the array
                intArray[i] = inputValue;
-              
             }
             else 
             {
@@ -55,16 +57,22 @@ public class ScannerLab {
                intArray[i] = -99;
                scan.next();
             }
-            //echo the input value
         }
         
         int total = 0;
-        // loop through the array and add the values
-        for(int value : intArray)
+        // loop through the array and sum the values
+        for(int i = 0; i < intArray.length; i++)
         {
-            total+= value;
+            total += intArray[i];           
         }
+        
         System.out.println("The total of your values is " + total);
+        
+        //sort array and get min and max values
+        Arrays.sort(intArray);
+        System.out.println("Maximum value entered: " + intArray[0]);
+        System.out.println("Minimum value entered: " + intArray[intArray.length - 1]);
+        
     }
     
     public static void main(String[] args) {
