@@ -37,7 +37,7 @@ public class Dwarves {
    * @param name The name to be added
    */
   public void add(String name) {
-    dwarves.add(name);
+         dwarves.add(name);
   }
 
   /**
@@ -61,7 +61,7 @@ public class Dwarves {
     System.out.println("Print out the list using the explicit iterator method:");
     Iterator<String> dwarf = dwarves.iterator();
     while (dwarf.hasNext()) {
-      System.out.println("\"" + dwarf.next() + "\"");
+      System.out.println(dwarf.next());
     }
     System.out.println();
 
@@ -76,6 +76,7 @@ public class Dwarves {
     for (Object check : dwarves) {
       System.out.println(check);
     }
+    //dwarves.forEach((dwarf) -> System.out.println(dwarf));
     System.out.println();
   }
 
