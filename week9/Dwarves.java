@@ -1,6 +1,13 @@
 import java.util.ArrayList;
 import java.util.*;
 
+/**
+*@author Scott Hansford
+*@version LA10: Dwarves
+*@version check
+*/
+
+
 /*
  * This is the starting point code for Lab: Dwarves.
  */
@@ -88,10 +95,18 @@ public class Dwarves {
   public static void main(String[] args) {
     // instantiate the Dwarves class
     Dwarves theGuys = new Dwarves();
+    long startTime = System.nanoTime();
+      
+      
     theGuys.addNames();
     theGuys.print();
     theGuys.print2();
     theGuys.print3();
+    
+    long endTime = System.nanoTime();
+      
+    long duration = (endTime - startTime); //divide by 1000000 to get milliseconds.
+      System.out.println(duration);
   }
 
 }
