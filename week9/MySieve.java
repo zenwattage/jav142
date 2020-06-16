@@ -33,10 +33,12 @@ public class MySieve implements Sieve
       // square root of n to get upper limit
       M = (int)Math.sqrt(n);
       
+      // add numbers to list
       for(int i = 2; i <= n; i++)
       {
          numberList.add(i);
       }
+      
       
       if(n >= 2)
       {
@@ -44,7 +46,7 @@ public class MySieve implements Sieve
          currentPrime = numberList.get(0);
          primeList.add(currentPrime);
          
-         //remove duplicates
+         //remove duplicates and composites
          for(int j = 0; j < numberList.size(); j++)
          {
             if(numberList.get(j) % currentPrime == 0)
