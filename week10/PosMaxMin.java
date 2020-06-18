@@ -13,35 +13,42 @@
  public class PosMaxMin
  {
    
-    // public static float[] posMaxMin(ArrayList<Float> vals)
-//     {
-//       int max, min;
-//      
-//       return floatArray;
-//     }
+    public static float posMaxMin(java.util.List<Float> vals)
+    {
+      float min = 0;
+      float max = 0;
+      float[] newArray = new float[2];
+      
+      if(vals.get(0) > 0f)
+      {
+         min = vals.get(0);
+      }
+      
+      for(int i = 0; i <= vals.size() -1 ; i++)
+      {
+         if( vals[i] < min && vals[i] > 0){
+            min = vals[i];
+         }
+               
+         if(vals[i] > min && vals[i] > max && vals[i] > 0){
+            max = vals[i];
+         }         
+      }
+      
+      vals[0] = min;
+      vals[1] = max;
+      
+      return vals;
+    }
      
    
     public static void main(String[] args)
     {
-      float[] myArray = {2.3f, 1.4f, 3.2f, 5.4f, 2.2f,5.1f};
-      float min = myArray[0];
-      float max = 0;
-      float[] newArray = new float[2];
-      for(int i = 0; i <= myArray.length -1 ; i++)
-      {
-         if(myArray[i] < min){
-            min = myArray[i];
-         }
-               
-         if(myArray[i] > min && myArray[i] > max){
-            max = myArray[i];            
-         }         
-      }
+      //float[] myArray = {2.3f, 1.4f, 3.2f, 5.4f, 2.2f,5.1f};
+      float[] myArray = {-3.2f, -1.4f, -2.5f, -4.1f};
       
-      newArray[0] = min;
-      newArray[1] = max;
-
-      System.out.println(Arrays.toString(newArray));
+   
+      posMaxMin(myArray);
     }
 
 }

@@ -26,9 +26,13 @@ public class TakeTen
 
    public static void main(String[] args)
    {
-      int[] nums = new int[] {1,10,10,2};
+      //int[] nums = new int[] {1,10,10,2};
       
-      takeTen(nums);
+      // System.out.println(takeTen(nums));
+     int[] nums = new int[] {2020,17,6};
+     
+     for(int i =
+     
    }
 
 }
