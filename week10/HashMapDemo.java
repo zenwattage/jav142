@@ -29,7 +29,7 @@ public class HashMapDemo
      * new Color itself is the value.
      * @param name the color name
      * @param red the amount of red-ness in the color
-     * @param green the amount of green-ness in the color
+     * @param green the amount of g1reen-ness in the color
      * @param blue the amount of blue-ness in the color
      */
     public void addColor(String name, int red, int green, int blue)
